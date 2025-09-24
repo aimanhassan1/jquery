@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: darkgoldenrod;
+    }
+</style>
+<body>
+    <div class="box">
+        
+    </div>
+    <button id="before">before</button>
+    <button id="after">after</button>
+    <script>
+        $(document).ready(function(){
+
+       
+        $("#before").click(function(){
+           $(".box").before("<h1>before method</h1>")
+        })
+        $("#after").click(function(){
+           $(".box").after("<h1>after method</h1>")
+        })
+    })
+    </script>
+</body>
+</html>

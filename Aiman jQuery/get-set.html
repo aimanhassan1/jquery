@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="btn1">html</button>
+    <button id="btn2">input</button>
+    <button id="btn3">text</button>
+    <p>thanks <b>Lorem ipsum dolor sit.</b></p>
+<input type="text">
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+//   $("p").html("<li>hello world <li/>")
+alert("html" +" " +$('p').html())
+        })
+        $("#btn3").click(function(){
+//   $("p").text("<li>hello world <li/>")
+alert("text" +" " +$('p').text())
+
+        })
+        $("#btn2").click(function(){
+  $("input").val("hello world ")
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<style>
+    .container{
+        height: 300px;
+        width: 300px;
+        background-color: cadetblue;
+        position: relative;
+}
+</style>
+<body>
+    <div class="container">animate</div>
+    <button>animate</button>
+    <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".container").animate({heigth:200,width:200},4000)
+        $(".container").animate({left:200,fontSize:30},4000)
+        $(".container").animate({opacity:0.7,top:200},4000)
+
+
+    })
+})
+    </script>
+</body>
+</html>

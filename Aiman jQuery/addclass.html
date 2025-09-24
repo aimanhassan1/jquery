@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<style>
+    .box{
+        /* background-color: cornflowerblue;
+        font-size: 40px; */
+        border: 3px solid red;
+    }
+</style>
+<body>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis voluptas, distinctio at magnam provident quia voluptate odio quos accusamus velit eum doloribus numquam, sunt architecto nostrum libero laboriosam. Fugiat, corrupti.</div>
+  name:  <input type="text" id="text" >
+<button>submit</button>
+<script>
+    $(document).ready(function(){
+    $("div").click(function(){
+        $("div").addClass("box")   
+    })
+    $("div").dblclick(function(){
+        $("div").removeClass("box")   
+       
+    })
+    $("button").click(function(){
+   if($("#text").val()==""){
+    $("#text").addClass("box") 
+    alert("fill the field")
+   }
+        else{
+            $("#text").removeClass("box")   
+        alert("thanks")
+     } 
+    })
+})
+</script>
+</body>
+</html>

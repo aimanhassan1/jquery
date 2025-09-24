@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<style>
+    .box{
+        height: 50px;
+        background-color: rgb(159, 255, 144);
+    }
+    .box2{
+        height: 200px;
+        background-color: rgb(183, 99, 195);
+    }
+</style>
+<body>
+    <!-- slideUp slideDown slideToggle -->
+    <div class="box"><h2>click here to slide up</h2></div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, asperiores.</div>
+    <script>
+$(document).ready(function(){
+    $(".box").click(function(){
+        // $(".box2").slideUp()
+        // $(".box2").slideDown()
+        $(".box2").slideToggle(5000)
+
+
+    })
+})
+    </script>
+</body>
+</html>
